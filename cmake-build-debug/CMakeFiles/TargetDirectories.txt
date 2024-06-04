@@ -1,3 +1,3 @@
-C:/Users/Jacklee/CLionProjects/DSA/cmake-build-debug/CMakeFiles/DSA.dir
-C:/Users/Jacklee/CLionProjects/DSA/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Jacklee/CLionProjects/DSA/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/jacklee/develop/ace_leetcode_algo/ACE_LEETCODE_ALGO/cmake-build-debug/CMakeFiles/DSA.dir
+/Users/jacklee/develop/ace_leetcode_algo/ACE_LEETCODE_ALGO/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jacklee/develop/ace_leetcode_algo/ACE_LEETCODE_ALGO/cmake-build-debug/CMakeFiles/rebuild_cache.dir
