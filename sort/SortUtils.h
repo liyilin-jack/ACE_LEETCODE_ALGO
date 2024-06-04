@@ -12,7 +12,6 @@ public:
     static void selectionSort(int *data,int size);
     static void insertionSort(int *data,int size);
     static void mergeSort(int *data,int size);
-    static
 };
 
 
