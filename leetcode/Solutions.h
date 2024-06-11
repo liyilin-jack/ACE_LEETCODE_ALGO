@@ -48,6 +48,46 @@ public:
      * @return
      */
     bool canPlaceFlowers(vector<int>& flowerbed, int n);
+
+    /**
+     * You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n,
+     * representing the number of elements in nums1 and nums2 respectively.
+     * @param nums1
+     * @param m
+     * @param nums2
+     * @param n
+     */
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n);
+
+    /**
+     * Given an integer array nums and an integer val, remove all occurrences of val in nums in-place.
+     * The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
+     * @param nums
+     * @param val
+     * @return
+     */
+    int removeElement(vector<int>& nums, int val);
+
+    /**
+     * Given an integer array nums sorted in non-decreasing order,
+     * remove the duplicates in-place such that each unique element appears only once.
+     * The relative order of the elements should be kept the same.
+     * Then return the number of unique elements in nums.
+     * @param nums
+     * @return
+     */
+    int removeDuplicates(vector<int>& nums);
+
+    /**
+     * Given an integer array nums sorted in non-decreasing order,
+     * remove some duplicates in-place such that each unique element appears at most twice.
+     * The relative order of the elements should be kept the same.
+     * @param nums
+     * @return
+     */
+    int removeDuplicates2(vector<int>& nums);
+
+
 };
 
 
