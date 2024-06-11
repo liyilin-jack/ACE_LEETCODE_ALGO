@@ -43,7 +43,23 @@ void SortUtils::mergeSort(vector<int> &data) {
     mergeSortInner(data,0,data.size());
 }
 
-void SortUtils::quickSort(vector<int> &data) {
 
+int partition(vector<int>& data,int left,int right){
+    int p = left; //设置标定点为left索引处元素指针
+    // TODO
+}
+
+
+
+void quickSortInner(vector<int>& data,int left,int right){
+    if (left>=right)return;
+
+    int p = partition(data,left,right); // 返回一个索引，p左侧的小于它，p右侧的大于它
+    quickSortInner(data,left,p-1); //标定点左侧继续递归，进行partition
+    quickSortInner(data,p+1,right); //标定点右侧继续递归，进行partition
+}
+
+void SortUtils::quickSort(vector<int> &data) {
+    quickSortInner(data,0,data.size());
 }
 
