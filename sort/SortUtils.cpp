@@ -43,14 +43,38 @@ void SortUtils::mergeSort(vector<int> &data) {
     mergeSortInner(data,0,data.size());
 }
 
-
+/**
+ * 把整个数组分成两部分，索引p处左侧的元素小于该元素，右侧的元素大于该元素
+ * @param data
+ * @param left
+ * @param right
+ * @return p 左侧的元素小于data[p],右侧的元素大于data[p]
+ */
 int partition(vector<int>& data,int left,int right){
-    int p = left; //设置标定点为left索引处元素指针
-    // TODO
+    int v = data[left]; // 标定点的元素值
+    int j = left;
+    //  i  // 大于标定点的索引
+    //[ 4 1 5 3 7 6 ]
+    //  j // 大于标定点的索引，初始值为left，用于分隔小于v和大于v的部分
+    // data[left+1,j] < v; data[j+1,i-1] > v
+    for (int i = left+1; i <=right; ++i) {
+        if (data[i] < v){
+            swap(data[j+1],data[i+1]);
+            j++;
+        }
+        // 大于的情况下只需要i++即可，在循环条件上已有索引i++逻辑
+    }
+    swap(data[left],data[j]);
+    return j;
 }
 
 
-
+/**
+ * 对数组data[left,right] 进行快速排序
+ * @param data
+ * @param left
+ * @param right
+ */
 void quickSortInner(vector<int>& data,int left,int right){
     if (left>=right)return;
 
